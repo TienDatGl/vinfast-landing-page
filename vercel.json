@@ -1,12 +1,10 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "nuxt.config.js",
-      "use": "@nuxtjs/vercel-builder",
-      "config": {
-        "serverFiles": ["api/**"] 
-      }
-    }
+  "framework": "nuxtjs",
+  "buildCommand": "npm run build",
+  "outputDirectory": ".output/public",
+  "installCommand": "npm install",
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/api/$1" }
   ]
 }
