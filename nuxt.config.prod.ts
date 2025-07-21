@@ -114,7 +114,7 @@ export default defineNuxtConfig({
       crawlLinks: true,
       routes: ['/']
     },
-    preset: 'firebase',
+    preset: 'node-server',
     externals: {
       external: []
     },
