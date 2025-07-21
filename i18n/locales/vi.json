@@ -1,0 +1,59 @@
+{
+  "header": {
+    "home_page": "Trang Chủ",
+    "vinfast_car": "Ô Tô VinFast",
+    "battery_and_charging_station": "Pin & Trạm Sạc",
+    "news": "Tin Tức",
+    "contact": "Liên Hệ",
+    "sign_up": "Đăng Ký Lái Thử"
+  },
+  "footer": {
+    "vinfast_vietnam": "vinfast việt nam",
+    "vinfast_showroom": "Showroom Ô Tô Vinfast",
+    "showroom_address": "Địa chỉ: 363 Tôn Đức Thắng, P. Hòa Minh, Q Liên Chiểu, TP Đà Nẵng",
+    "customer_support": "hỗ trợ khách hàng",
+    "follow": "Follow"
+  },
+  "home_page": {
+    "vinfast_car_models": "Xe ô tô điện vinfast",
+    "price_from": "Giá từ",
+    "rolling_quote": "Báo giá lăn bánh",
+    "see_detail": "Xem xe",
+    "vinfast_green": "vinfast green",
+    "service_vehicle": "vinfast green - dòng xe dịch vụ"
+  },
+  "register_drawer": {
+    "car_test_drive_and_price_title": "BÁO GIÁ LĂN BÁNH & LÁI THỬ XE",
+    "vinfast_get_price_and_test_drive": "Nhận báo giá lăn bánh và lái thử xe VinFast",
+    "installment": "Trả góp",
+    "pay_all": "Trả thẳng",
+    "send_email_success": "Email đã được gửi thành công!",
+    "send_email_fail": "Gửi email thất bại. Vui lòng thử lại."
+  },
+  "form": {
+    "full_name": "Họ và Tên",
+    "hotline": "Hotline",
+
+    "phone": "Số điện thoại",
+    "car_selected": "Xe muốn mua",
+    "send_request_now": "Gửi yêu cầu ngay"
+  },
+  "common": {
+    "phone_number": "0901991556",
+    "hotline": "Hotline",
+    "email": "Email",
+    "vinfast_danang": "VinFast Đà Nẵng"
+  },
+  "promotion": {
+    "promotion_and_offer": "khuyến mãi & ưu đãi",
+    "gift_for_online_customer": "Quà tặng dành cho khách hàng gửi yêu cầu báo giá Online.",
+    "promotion_required": "*Quý khách vui lòng liên hệ hotline tư vấn, nhận thông tin khuyến mãi và ưu đãi."
+  },
+  "detail": {
+    "car_price": "Bảng giá xe",
+    "per_charge": "/ 1 lần sạc",
+    "max_power": "Công suất tối đa",
+    "purchase_deposit": "Đặt cọc mua",
+    "price_from": "Giá từ"
+  }
+}

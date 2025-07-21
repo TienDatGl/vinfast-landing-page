@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .narrow-container {
+    @apply px-4 md:px-6 xl:px-8 xxl:px-0 mx-auto max-w-[1336px];
+  }
+
+  .custom-button-main {
+    @apply border-blue-attr !bg-blue-attr !text-white-main !ring-blue-attr hover:!border-blue-3 hover:!bg-blue-3 hover:!ring-blue-3 disabled:!border-blue-attr/10 disabled:!bg-blue-attr/50 disabled:!ring-blue-attr/50 !border !py-[10px] !text-sm !font-medium hover:!shadow-none;
+  }
+
+  .custom-button-secondary {
+    @apply !border-blue-attr !text-blue-attr !ring-blue-attr hover:!border-blue-3 hover:!text-blue-3 disabled:!border-blue-attr/50 disabled:!text-blue-attr/50 !border !bg-transparent !py-[10px] !text-sm !font-medium;
+  }
+  .custom-input-radio {
+    @apply !border-gray-main checked:!border-blue-attr checked:!bg-blue-attr hover:!border-blue-attr;
+  }
+}
