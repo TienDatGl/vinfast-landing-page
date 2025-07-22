@@ -1,5 +1,7 @@
 // nuxt.config.ts
 
+import { vinfastSlugs } from "./utils/common";
+
 export default defineNuxtConfig({
   extends: ['./domains/core', './domains/san-pham', './domains/lien-he'],
 
@@ -112,7 +114,7 @@ export default defineNuxtConfig({
     compatibilityDate: '2025-07-20',
     prerender: {
       crawlLinks: true,
-      routes: ['/']
+      routes: ['/', ...vinfastSlugs.map(slug => `/san-pham/${slug}`)]
     },
     preset: 'node-server',
     externals: {

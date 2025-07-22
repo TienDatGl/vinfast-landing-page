@@ -145,3 +145,17 @@ export const getSeoMeta = (slug: string) => {
 
   return metaMap[slug]
 }
+
+export const vinfastSlugs = [
+  'vinfast-ec-van',
+  'vinfast-herio-green',
+  'vinfast-limo-green',
+  'vinfast-minio-green',
+  'vinfast-nerio-green',
+  'vinfast-vf-3',
+  'vinfast-vf-5',
+  'vinfast-vf-6',
+  'vinfast-vf-7',
+  'vinfast-vf-8',
+  'vinfast-vf-9'
+]
