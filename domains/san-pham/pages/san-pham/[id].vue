@@ -74,19 +74,20 @@
 </template>
 
 <script lang="ts" setup>
+import { getSeoMeta } from '~/utils/common'
+
 const { car, fetchCarBySlug } = useCars()
 const { blog, fetchBlogBySlug } = useBlog()
 const route = useRoute()
 const slug = route.params.id as string
 
 onMounted(async () => {
+  await fetchCarBySlug(slug)
   await fetchBlogBySlug(slug)
 })
-await fetchCarBySlug(slug)
 
-if (car.value) {
-  useSeoMetaForCar(car.value, slug)
-}
+getSeoMeta(slug)
+
 const carImages = computed(() =>
   Array.from({ length: 10 }, (_, i) => ({
     imageSrc: car.value?.imageUrl || '',

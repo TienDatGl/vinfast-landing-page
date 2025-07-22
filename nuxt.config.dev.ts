@@ -114,6 +114,9 @@ export default defineNuxtConfig({
     prerender: {
       crawlLinks: true,
       routes: ['/']
+    },
+    externals: {
+      external: ['nodemailer']
     }
     // preset: 'node',
     // externals: {

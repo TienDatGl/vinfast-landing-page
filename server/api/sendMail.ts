@@ -1,18 +1,8 @@
 // server/api/sendMail.ts
-import { defineEventHandler, readBody } from 'h3'
-import nodemailer from 'nodemailer'
 
 export default defineEventHandler(async (event) => {
   const body = await readBody(event)
-
-  const transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-      user: process.env.GMAIL_USER,
-      pass: process.env.GMAIL_PASS,
-    },
-  })
-
+  const { default: transporter } = await import('@/server/utils/sendMail.cjs')
 
 const mailOptions = {
   from: '"Vinfast Đà Nẵng Mail Server" <your_email@gmail.com>',

@@ -116,7 +116,7 @@ export default defineNuxtConfig({
     },
     preset: 'node-server',
     externals: {
-      external: []
+      external: ['nodemailer']
     },
     noExternals: true
   },
@@ -139,5 +139,10 @@ export default defineNuxtConfig({
   },
   devtools: {
     enabled: false
+  },
+  vite: {
+    optimizeDeps: {
+      include: ['lodash-es']
+    }
   }
 })

@@ -6,16 +6,15 @@ export const useCars = () => {
   const cars = useState<Car[]>('cars', () => [])
   const loading = ref(false)
   const error = ref<Error | null>(null)
-  const config = useRuntimeConfig()
-
 
   const fetchCarBySlug = async (slug: string) => {
     loading.value = true
     error.value = null
     try {
-      const result = await $fetch<Car>(`${config.public.apiBase}/fetch-car-by-slug`, {
-        params: { slug }
-      })
+      const result = await fetchDocByField<Car>(FIRE_BASE_COLLECTION.CARS, QUERY_FILTER.SLUG, slug)
+
+      if (!result) throw new Error(`Không tìm thấy blog với slug: ${slug}`)
+
       car.value = result
     } catch (err) {
       error.value = err as Error
